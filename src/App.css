@@ -1,0 +1,238 @@
+.App {
+    background-image: url("./pics/web-background.png");
+    background-size: cover;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    padding: 25px;
+    border-bottom: 2px solid #d0d0d0;
+}
+
+.header {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around
+}
+
+.header-title {
+    margin: 0 0 0 13%;
+    text-align: center;
+    align-items: center;
+    color: #0c0c0c;
+    padding: 3px;
+}
+
+.header-span {
+    font-size: 40px;
+    animation: shining 0.1s infinite;
+}
+
+@keyframes shining {
+    from {
+        text-shadow: 0 0 3px rgba(211, 200, 182, 0.9),
+        0 0 30px rgba(211, 207, 182, 0.3), 0 0 12px rgba(227, 126, 9, 0.42),
+        0 0 21px rgba(247, 214, 165, 0.99), 0 0 34px rgb(233, 185, 113),
+        0 0 54px rgba(229, 186, 126, 0.9);
+    }
+    to {
+        text-shadow: 0 0 3px rgb(211, 207, 182),
+        0 0 30px rgba(211, 211, 182, 0.4), 0 0 12px rgba(244, 228, 136, 0.6),
+        0 0 22px rgba(255, 230, 163, 0.8), 0 0 38px rgba(247, 226, 155, 0.9),
+        0 0 60px rgb(186, 132, 61);
+    }
+}
+
+
+.main-nav ul {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+
+nav li {
+    display: inline;
+    padding: 1em 3.5em 1em 3.5em;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Marker Felt, fantasy;
+}
+
+nav a {
+    padding: 4px 20px;
+    cursor: default;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #d4d4da;
+    border-radius: 9999px;
+}
+
+.header-search {
+    padding-top: 0.8em;
+    text-align: right;
+}
+
+.search-ajax {
+    display: inline-block;
+    width: 200px;
+}
+
+.search-ajax input {
+    padding: 8px 8px;
+    width: 90%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+}
+
+.book-box {
+    margin: 0 10% 0 30%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.book-container {
+    width: 70%;
+    max-height: 300px;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow), var(--tw-shadow);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.edit-column {
+    height: 10%;
+    width: 25%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.edit-svg {
+    padding:10% 15% 0 15%;
+    float:right;
+}
+
+
+.content-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.article-title {
+    margin: 1% 82% 1% 4%;
+    font-family: "Noto Sans Egyptian Hieroglyphs", serif;
+}
+
+.article-content {
+    height: 100%;
+    width: 82%;
+}
+
+.title-navigator {
+    padding-top: 18%;
+}
+
+.svg-title {
+    margin: 70% 12%;
+}
+
+.edit-card {
+    padding:10% 0 0 10%;
+}
+
+.edit-block:hover path{
+    fill:black;
+}
+
+.title-navigator:hover path{
+    fill:black;
+}
+
+.summary-box {
+    border-top: 2px solid whitesmoke;
+    height: 250px;
+}
+
+.summary-content {
+    margin:1% 0 0 5%;
+    padding-right: 2%;
+    height: 90%;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: break-spaces;
+    line-height: 25px;
+    overflow-y:auto;
+}
+
+.summary-title {
+    margin: 15%;
+    font-family: Marker Felt, fantasy;
+    font-size: 36px;
+}
+
+.summary-title:hover {
+    color: sandybrown;
+}
+
+.footer-background {
+    margin: 20% 0 0 0;
+    background-color: #d4d4da;
+}
+
+.footer-content {
+    text-align: center;
+    margin: 1%;
+}
+
+.footer-title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.item {
+    line-height: 2;
+    font-size: 14px;
+    cursor: default;
+    color: gray;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.item:hover {
+    color: #1890ff;
+}
